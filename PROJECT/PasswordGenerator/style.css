@@ -1,0 +1,141 @@
+/* *{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+       justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1e1e2f, #12121c);
+    height: 100vh;
+    width: 100vw;
+    border: 2px solid black;
+}
+
+#div{
+     background: rgba(255, 255, 255, 0.05);
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+     width: 60%;
+     border-radius: 10px;
+     border: 1px solid white;
+    /* background-color: aliceblue;
+ } */ 
+/* 
+#pass{
+     /* background: #111; */
+    /* color: rgb(99, 73, 246);
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 5px;
+}
+
+#div2{
+    background-color: rgb(124, 207, 199);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+button{
+    font-size: larger;
+    padding: 5px;
+    margin-top: 10px;
+    color: black;
+    font-weight: 900;
+    border-radius: 10px;
+}  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #1e1e2f, #12121c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+#div {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+    width: 320px;
+    text-align: center;
+}
+
+#pass h2 {
+    background: #111;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    letter-spacing: 4px;
+}
+
+#range {
+    width: 100%;
+    margin: 10px 0;
+    accent-color: #00f5a0;
+}
+
+#rangeval {
+    font-size: 14px;
+    opacity: 0.8;
+    margin-bottom: 15px;
+}
+
+#div2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#div2 input {
+    margin-right: 8px;
+    accent-color: #00f5a0;
+}
+
+#div2 label {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #00f5a0, #00d9f5);
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00f5a0;
+}
+
+button:active {
+    transform: scale(0.97);
+}

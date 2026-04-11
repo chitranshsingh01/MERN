@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional Login</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background: linear-gradient(135deg,#5f6dfc,#9c4dcc);
+overflow:hidden;
+}
+
+/* background shapes */
+
+body::before,
+body::after{
+content:"";
+position:absolute;
+border-radius:50%;
+filter:blur(80px);
+opacity:0.6;
+}
+
+body::before{
+width:350px;
+height:350px;
+background:#00e1ff;
+top:-100px;
+left:-100px;
+}
+
+body::after{
+width:350px;
+height:350px;
+background:#ff00c8;
+bottom:-100px;
+right:-100px;
+}
+
+/* login card */
+
+.login-container{
+position:relative;
+width:420px;
+max-width:90%;
+padding:45px 40px;
+border-radius:18px;
+background:rgba(255,255,255,0.1);
+backdrop-filter:blur(16px);
+box-shadow:0 15px 35px rgba(0,0,0,0.25);
+color:white;
+}
+
+/* heading */
+
+.login-container h2{
+text-align:center;
+margin-bottom:30px;
+font-weight:600;
+letter-spacing:1px;
+}
+
+/* input group */
+
+.input-group{
+margin-bottom:22px;
+}
+
+.input-group label{
+display:block;
+font-size:14px;
+margin-bottom:6px;
+opacity:0.9;
+}
+
+.input-group input{
+width:100%;
+padding:12px 14px;
+border-radius:8px;
+border:none;
+outline:none;
+font-size:14px;
+}
+
+/* login button */
+
+.login-btn{
+width:100%;
+padding:12px;
+border:none;
+border-radius:8px;
+background:white;
+color:#333;
+font-size:15px;
+font-weight:600;
+cursor:pointer;
+transition:0.3s;
+margin-top:10px;
+}
+
+.login-btn:hover{
+transform:translateY(-2px);
+box-shadow:0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* extra links */
+
+.extra{
+margin-top:18px;
+text-align:center;
+font-size:14px;
+}
+
+.extra a{
+color:white;
+text-decoration:underline;
+}
+
+/* responsive */
+
+@media (max-width:768px){
+
+.login-container{
+width:340px;
+padding:35px 30px;
+}
+
+.login-container h2{
+font-size:22px;
+}
+
+}
+
+@media (max-width:480px){
+
+.login-container{
+width:95%;
+padding:30px 25px;
+}
+
+.input-group input{
+padding:11px;
+}
+
+.login-btn{
+padding:11px;
+}
+
+}
+</style>
+
+</head>
+
+<div class="login-container">
+
+<h2>Welcome Back</h2>
+
+<form>
+
+<div class="input-group">
+<label>Email Address</label>
+<input type="email" placeholder="Enter your email">
+</div>
+
+<div class="input-group">
+<label>Password</label>
+<input type="password" placeholder="Enter your password">
+</div>
+
+<button class="login-btn">Login</button>
+
+<div class="extra">
+<p>Forgot password?</p>
+<p>Don't have an account? <a href="#">Sign up</a></p>
+</div>
+
+</form>
+
+</div>
+
+</body>
+</html>

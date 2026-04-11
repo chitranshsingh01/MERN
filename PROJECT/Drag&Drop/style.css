@@ -1,0 +1,25 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: beige;
+}
+.container1,.container2{
+    display: flex;
+    margin: 10px;
+    height: 300px;
+    width: 600px;
+    background-color: rgb(23, 90, 184);
+}
+
+.item{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 5px;
+    height: 80px;
+    width: 80px;
+    background-color: black;
+}
