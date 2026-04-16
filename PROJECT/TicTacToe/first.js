@@ -74,12 +74,29 @@ function Winner(){
 
 }
 
-rbtn.addEventListener("click" ,()=>{  
-     document.body.style.backgroundColor="#1e1e1e";
-        //   win.innerText="";
-    for (const element of boxes) {
-        element.innerText='';
+// rbtn.addEventListener("click" ,()=>{  
+//      document.body.style.backgroundColor="#1e1e1e";
+//         //   win.innerText="";
+//     for (const element of boxes) {
+//         element.innerText='';
         
+//     }
+// })
+rbtn.addEventListener("click", () => {  
+    document.body.style.backgroundColor = "#1e1e1e";
+
+    // Reset game state
+    gameOver = false;
+    currentplay = "X";
+
+    // Clear board
+    for (const element of boxes) {
+        element.innerText = '';
     }
-})
+
+    // Remove previous winner message
+    let oldWin = document.querySelector("h1");
+    if (oldWin) oldWin.remove();
+});
+
 
