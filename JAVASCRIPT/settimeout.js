@@ -12,4 +12,4 @@
 //     setTimeout(()=>{
 //         console.log(index);
 //     },2000)
-// }
+// }f
