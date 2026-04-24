@@ -7,9 +7,8 @@
 
 
 
-
 // for (var index = 0; index < 6; index++) {
 //     setTimeout(()=>{
 //         console.log(index);
 //     },2000)
-// }f
+// }
