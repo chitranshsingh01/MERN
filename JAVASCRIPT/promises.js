@@ -1,15 +1,15 @@
-const promise1 =new Promise((resolve,reject)=>{
-    resolve("hellow2")
-    reject("nooo")
-})
+// const promise1 =new Promise((resolve,reject)=>{
+//     resolve("hellow2")
+//     reject("nooo")
+// })
 
-promise1.then((result)=>{
-    console.log(result);
-});
+// promise1.then((result)=>{
+//     console.log(result);
+// });
 
-promise1.catch((result)=>{
-    console.log(result);
-})
+// promise1.catch((result)=>{
+//     console.log(result);
+// })
 
 
 
@@ -58,4 +58,7 @@ selectItem("kadai panner")
   .then((item) => createOrder(item))
   .then((data) => payment(data.item, data.orderId))
   .then((status) => paymentStatus(status))
-  .catch((err) => console.log(err));
+//   .catch((err) => console.log(err));
+
+
+//WE CAN USE ASYNC AND AWAIT INSTEAD OF THE PROMIS CHAINING TOO 

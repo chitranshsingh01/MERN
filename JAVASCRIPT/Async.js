@@ -30,4 +30,57 @@ let z=ex2();
 
 
 
+// Difference between Promises and Async/Await in JavaScript
+
+// --------------------------------------
+// 1. Using Promises (.then and .catch)
+// --------------------------------------
+
+function fetchDataPromise() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("Data received using Promise");
+        }, 2000);
+    });
+}
+
+console.log("Promise example started");
+
+fetchDataPromise()
+    .then((data) => {
+        console.log(data);
+    })
+    .catch((error) => {
+        console.log(error);
+    });
+
+
+// --------------------------------------
+// 2. Using Async/Await
+// --------------------------------------
+
+function fetchDataAsync() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("Data received using Async/Await");
+        }, 2000);
+    });
+}
+
+async function getData() {
+    try {
+        console.log("Async/Await example started");
+
+        const data = await fetchDataAsync();
+
+        console.log(data);
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+getData(); 
+
+
+
 
