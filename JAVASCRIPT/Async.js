@@ -67,6 +67,12 @@ function fetchDataAsync() {
     });
 }
 
+
+
+
+
+
+
 async function getData() {
     try {
         console.log("Async/Await example started");

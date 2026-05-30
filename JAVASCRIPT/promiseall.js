@@ -22,8 +22,12 @@ function api3(){
     })
 }
 
-let x= Promise.all([api1(),api2(),api3()]).then((data)=>{
-    console.log(data);
+let x= Promise.all([api1(),api2(),api3()])
+.then(()=>{
+    console.log("accepted");
+})
+.catch(()=>{
+        console.log("some type of error")
 })
 
 
