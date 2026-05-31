@@ -55,11 +55,8 @@ function payment(item, id) {
 async function foodOrder(item) {
     try {
         let res1 = await searchFood(item);
-
         let res2 = await orderFood(res1.item);
-
         let res3 = await payment(res2.item, res2.id);
-
         console.log(
             "Payment successful with status",
             res3
