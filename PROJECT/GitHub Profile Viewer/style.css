@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0a192f;
+    font-family: Arial, sans-serif;
+}
+.heading{
+    color: #c7d2fe;
+    text-align: center;
+    font-weight: 750;
+}
+
+.main{
+    margin-top: 50px;
+    /* height: 100vh;
+    width: 100vh; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.seconddiv{
+    border: 2px solid rgb(212, 198, 198);
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #172a45;
+    min-width: 50%;
+    min-height: 50%;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 0 black;
+}
+img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 3px solid beige;
+}
+
+.follower{
+    display: flex;
+}
+
+.userinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+.userimg{
+    /* height: 300x; */
+    /* width: 100%; */
+}
+.username{
+    
+    color: #cac4c4;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.userdetail{
+    font-size: 20px;
+    text-align: center;
+}
+.userbio{
+    margin-top: 10px;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.follower{
+    display: flex;
+    justify-content: space-between; 
+    width: 70%;
+}
+.userfollow{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+.repo{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    box-shadow: 2px 2px 5px 0px black;
+}
+.visitprofile{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    width: 300px;
+    margin-top: 30px;
+    font-size: 20px;
+    color: aquamarine;
+    background-color: #111827;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 0px black;
+}
+
+input[type="text"]{
+    width: 280px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    background-color: #172a45;
+    color: #ccd6f6;
+    font-size: 16px;
+    outline: none;
+}
+
+input[type="text"]::placeholder{
+    color: #8892b0;
+}
+button{
+    padding: 12px 20px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    background-color: #64ffda;
+    color: #0a192f;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: #52e0c4;
+    transform: translateY(-2px);
+}
+.visitprofile{
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background-color: #000000;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+}
+.visitprofile:hover{
+    color: teal;
+    scale:1.05;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  display: grid;
+  border-radius: 50%;
+  background:
+    linear-gradient(0deg ,rgb(0 0 0/50%) 30%,#0000 0 70%,rgb(0 0 0/100%) 0) 50%/8% 100%,
+    linear-gradient(90deg,rgb(0 0 0/25%) 30%,#0000 0 70%,rgb(0 0 0/75% ) 0) 50%/100% 8%;
+  background-repeat: no-repeat;
+  animation: l23 1s infinite steps(12);
+}
+.loader::before,
+.loader::after {
+   content: "";
+   grid-area: 1/1;
+   border-radius: 50%;
+   background: inherit;
+   opacity: 0.915;
+   transform: rotate(30deg);
+}
+.loader::after {
+   opacity: 0.83;
+   transform: rotate(60deg);
+}
+@keyframes l23 {
+  100% {transform: rotate(1turn)}
+}
+
+
+
+
+
+
+
+
+

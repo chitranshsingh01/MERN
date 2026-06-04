@@ -29,9 +29,7 @@ board.addEventListener('click',(e)=>{
         gameOver=true;
         return ;
       }
-       
-        
-        
+      
     if(currentplay=="X") currentplay="O";
     else currentplay="X";
     }
