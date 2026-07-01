@@ -29,7 +29,7 @@ board.addEventListener('click',(e)=>{
         gameOver=true;
         return ;
       }
-      
+
     if(currentplay=="X") currentplay="O";
     else currentplay="X";
     }
@@ -61,7 +61,7 @@ function Winner(){
             if(val0===val1 && val0===val2){
                 console.log(val0, "is winner");
                 document.body.style.backgroundColor="purple";
-              let win= document.createElement("h1")
+              let win= document.createElement("h2")
                win.innerText=`${val0} is the Winner`;
                document.body.appendChild(win);
                 return val0;
@@ -93,8 +93,9 @@ rbtn.addEventListener("click", () => {
     }
 
     // Remove previous winner message
-    let oldWin = document.querySelector("h1");
+    let oldWin = document.querySelector("h2");
     if (oldWin) oldWin.remove();
+    // oldWin.innerHTML="";
 });
 
 
