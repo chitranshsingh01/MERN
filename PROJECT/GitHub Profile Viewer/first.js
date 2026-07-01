@@ -51,7 +51,8 @@
  }
  
 
-button.addEventListener("click",()=>{
+button.addEventListener("click",(e)=>{
+    e.preventDefault();
     // console.log(input.value);
      document.getElementById("userprofile").innerHTML=` <div class="loader"></div> `;
     let userId = input.value;
