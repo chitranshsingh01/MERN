@@ -1,0 +1,36 @@
+REACT USED FOR -  DYNAMIC WEB
+                  MORE RESPONSIVE
+                  VIRTUAL DOM
+
+
+BY LINK OF REACT CDN -
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+IT HAVE - *REACT AND REACT DOM*
+
+REACT NATIVE - APP DEVELOPMENT
+REACT DOM - WEB DEVELOPMENT
+
+
+OR 
+
+ 
+WE CAN USE DIFFERENT METHODS TO DO REACT SUCH AS UTF-
+REACT APP ;
+REACT BUNDLERS - VITE;
+
+
+FOR BUNDLER LIKE REACT PASTE ------------------------------- npm create vite@latest 
+RUN IN TERMINAL IN FOLDER INSIDE WHICH YOU WANNA CREATE
+
+USE ---  .\  --- AFTER COMMAND TO PREVENT MAKING NEW FOLDER
+
+MOST OF THE THINGS ARE DONE IN --SRC-- FOLDER NOWHERE ELSE
+
+
+
+
+
+
+

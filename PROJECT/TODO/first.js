@@ -83,8 +83,10 @@ div1.innerHTML=` <li>
                 <button onclick=removetodo(${id},${idx})>Delete</button>
             </li>`
             div1.setAttribute("id",id++)
-    alltodo.appendChild(div1); 
-    let checkbox = div1.querySelector("input");
+    alltodo.appendChild(div1);
+    
+    
+let checkbox = div1.querySelector("input");
 let h3 = div1.querySelector("h3");
 
 if (singletodo.completed) {

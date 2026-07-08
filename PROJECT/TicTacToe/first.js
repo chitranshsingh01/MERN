@@ -21,6 +21,7 @@ let winningcondition=[
 
 
 board.addEventListener('click',(e)=>{
+    e.preventDefault();
     if(e.target.innerText==""){
         if(gameOver) return;
          e.target.innerHTML=`<h2>${currentplay}</h2>`;
